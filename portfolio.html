@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="body">
+    <!-- header -->
+<header class="header">
+    <!-- навигация -->
+    <div class="main-nav container">
+        <nav class="navigation">
+            <a href="./index.html" class="logo logo-h">Web<span class="logo-header">Studio</span></a>
+            <ul class="site-nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
+                <li class="nav-item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Контакты</a></li>
+            </ul>
+</nav>
+<ul class="header-info">
+    <li class="nav-item"><a href="mailto:info@devstudio.com" class="contacts-header">
+            <svg class="contacts-ico" width="16" height="12">
+                <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a></li>
+    <li class="nav-item"><a href="tel:+380961111111" class="contacts-header">
+            <svg class="contacts-ico" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>+38 096 111 11 11</a></li>
+</ul>
+</div>
+</header>
+    <main>
+    <!-- кнопки -->
+    <section class="section">
+       <div class="container">
+            <h1 class="vis-hiden">Портфолио</h1>
+            <ul class="filter">
+                <li class="filter-btn"><button type="button" class="button">Все</button></li>
+                <li class="filter-btn"><button type="button" class="button">Веб-сайты</button></li>
+                <li class="filter-btn"><button type="button" class="button">Приложения</button></li>
+                <li class="filter-btn"><button type="button" class="button">Дизайн</button></li>
+                <li class="filter-btn"><button type="button" class="button">Маркетинг</button></li>
+            </ul>
+    <!-- галерея портфолио -->
+            <ul class="portfolio">
+                <li class="item">
+                    <img src="./images/tekhno.jpg" alt="Технокряк" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Технокряк</h2>
+                    <p class="port-branch">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/no_gs.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="port-branch">Дизайн</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/seeafood.jpg" alt="Ресторан Seafood" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Ресторан Seafood</h2>
+                    <p class="port-branch">Приложение</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/prime.jpg" alt="Проект Prime" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Проект Prime</h2>
+                    <p class="port-branch">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/boxes.jpg" alt="Проект Boxes" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Проект Boxes</h2>
+                    <p class="port-branch">Приложение</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title" lang="en">Inspiration has no Borders</h2>
+                    <p class="port-branch">Веб-сайт</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/ltd_edition.jpg" alt="Издание Limited Edition" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Издание Limited Edition</h2>
+                    <p class="port-branch">Дизайн</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/lab.jpg" alt="Проект LAB" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title">Проект LAB</h2>
+                    <p class="port-branch">Маркетинг</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="./images/gr_bussines.jpg" alt="Growing Business" width="370" />
+                    <div class="port-txt">
+                    <h2 class="port-title" lang="en">Growig Business</h2>
+                    <p class="port-branch">Приложение</p>
+                    </div>
+                </li>
+            </ul>
+       </div>
+    </section>
+    </main>
+<!-- footer -->
+<footer class="page-footer">
+    <div class="footer container">
+        <div class="contacts-ft">
+            <a href="./index.html" class="logo logo-f">Web<span class="logo-footer">Studio</span></a>
+            <address>
+                <ul class="footer-info">
+                    <li class="footer-item"><a href="https://goo.gl/maps/7974E7wmpm6zUWJ98"
+                            class="contacts-footer location">г.
+                            Киев, пр-т Леси
+                            Украинки, 26</a>
+                    </li>
+                    <li class="footer-item"><a href="mailto:info@devstudio.com"
+                            class="contacts-footer">info@devstudio.com</a></li>
+                    <li class="footer-item"><a href="tel:+380991111111" class="contacts-footer">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+        <div class="soc-card-ft">
+            <h4 class="soc-title-ft">присоединяйтесь</h4>
+            <ul class="soc-btn-ft">
+                <li class="soc-unit-ft">
+                    <a href="" class="soc-link-ft">
+                        <svg class="soc-logo-ft">
+                            <use href="./images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-unit-ft">
+                    <a href="" class="soc-link-ft">
+                        <svg class="soc-logo-ft">
+                            <use href="./images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-unit-ft">
+                    <a href="" class="soc-link-ft">
+                        <svg class="soc-logo-ft">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="soc-unit-ft">
+                    <a href="" class="soc-link-ft">
+                        <svg class="soc-logo-ft">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
