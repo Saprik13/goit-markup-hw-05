@@ -79,6 +79,7 @@ img {
 }
 .contacts-ico {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 .contacts-header:hover .contacts-ico,
 .contacts-header:focus .contacts-ico {
@@ -174,6 +175,9 @@ img {
   text-align: center;
   background-repeat: no-repeat;
   padding: 200px 0;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-button {
@@ -377,9 +381,6 @@ img {
   justify-content: center;
   margin-right: 30px;
 }
-.cl-link {
-  display: flex;
-}
 
 .cl-unit:last-child {
   margin-right: 0;
@@ -392,9 +393,11 @@ img {
 }
 
 .cl-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--fill-main);
   border-radius: 4px;
 }
@@ -422,7 +425,8 @@ img {
 
 .button:hover,
 .button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -457,6 +461,9 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
+.item a {
+  color: var(--title-text-color);
+}
 
 .item {
   cursor: pointer;
@@ -464,7 +471,11 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
-.item:hover {
+.port-link {
+  display: block;
+}
+.port-link:hover,
+.port-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -493,6 +504,7 @@ img {
 /* ===футер=== */
 .footer {
   display: flex;
+  align-items: baseline;
 }
 .page-footer {
   background: #2f303a;
@@ -536,7 +548,6 @@ img {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 .soc-btn-ft {
