@@ -17,7 +17,7 @@
 body {
   color: var(--title-text-color);
   font-family: var(--primary-font), sans-serif;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 address {
@@ -61,7 +61,7 @@ img {
 /* ================================================ */
 
 /* скрытые элементы */
-.vis-hiden {
+.vis-hidden {
   width: 1px;
   height: 1px;
   visibility: hidden;
@@ -157,7 +157,7 @@ img {
   color: #000000;
 }
 .logo-footer {
-  color: #ffffff;
+  color: #fff;
 }
 /* =============================================== */
 
@@ -191,13 +191,13 @@ img {
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
-  color: #ffffff;
+  color: #fff;
   background: var(--accent-color);
 }
 
 .hero-title {
   margin-bottom: 30px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -297,7 +297,7 @@ img {
 .team {
   margin-left: -30px;
   display: flex;
-  wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .team-unit {
@@ -327,7 +327,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* ===соцсети=== */
+/* команда ===соцсети=== */
 .soc-btn {
   display: flex;
   justify-content: center;
@@ -366,7 +366,7 @@ img {
 }
 .soc-link:hover .soc-logo,
 .soc-link:focus .soc-logo {
-  fill: #ffffff;
+  fill: #fff;
 }
 /* ============================================ */
 
@@ -423,16 +423,16 @@ img {
   margin-right: 0;
 }
 
-.button:hover,
-.button:focus {
+.port-button:hover,
+.port-button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #fff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.button:active {
+.port-button:active {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: #fff;
 }
 
 .filter {
@@ -441,7 +441,7 @@ img {
   justify-content: center;
 }
 
-.button {
+.port-button {
   border: transparent;
   border-radius: 4px;
   text-align: center;
@@ -525,7 +525,7 @@ img {
 }
 
 .contacts-footer.location {
-  color: #ffffff;
+  color: #fff;
 }
 
 .contacts-footer:focus,
@@ -586,7 +586,52 @@ img {
 }
 .soc-link-ft:hover .soc-logo-ft,
 .soc-link-ft:focus .soc-logo-ft {
-  fill: #ffffff;
+  fill: #fff;
 }
 /* ==================================== */
 /* =================== end of css ================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* кнопка модалки */
+.close-ico {
+  position: absolute;
+}
+
+.close-modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}

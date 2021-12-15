@@ -12,7 +12,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 <body class="body">
 <!-- header -->
@@ -43,12 +44,22 @@
 <!-- hero -->
 <section class="hero">
         <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
-        <button type="button" class="hero-button">Заказать услугу</button>
+        <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+<!-- модальное окно -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+            <svg class="close-ico" width="11" height="11">
+                <use href="./images/sprite.svg#icon-close" ></use>
+            </svg>
+        </button>
+    </div>
+</div>
 </section>
 <!-- особенности -->
 <section class="section section-feat">
 <div class="container">
-        <h2 class="vis-hiden">Особенности</h2>
+        <h2 class="vis-hidden">Особенности</h2>
         <ul class="features">
             <li class="title-txt">
                 <div class="feat-ico">
@@ -379,6 +390,8 @@
         </div>
     </div>
 </footer>
+
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
